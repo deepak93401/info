@@ -9,24 +9,24 @@ import { IoIosArrowUp } from "react-icons/io";
 
 
 function Home(){
-     let Up=function Scrollup(){
-        window.scrollTo(0,-1000)
-     }
+    //  let Up=function Scrollup(){
+    //     window.scrollTo(0,-1000)
+    //  }
    
-     window.addEventListener("scroll",myapp)
-     function myapp(){
-        // console.log("...scrolling")
-        let x=window.pageYOffset;
-        if(x===0 || x===950)
-        {
-            document.getElementById('Display-btn').style.display="none";
-        }
-        else{
-            document.getElementById('Display-btn').style.display="block";
-        }
+    //  window.addEventListener("scroll",myapp)
+    //  function myapp(){
+    //     // console.log("...scrolling")
+    //     let x=window.pageYOffset;
+    //     if(x===0 || x===950)
+    //     {
+    //         document.getElementById('Display-btn').style.display="none";
+    //     }
+    //     else{
+    //         document.getElementById('Display-btn').style.display="block";
+    //     }
         
 
-     }
+    //  }
     return(
         <>
         
@@ -42,7 +42,7 @@ function Home(){
 
 
                          </div>
-                         <button className="scroll-btn" onClick={Up} id="Display-btn">
+                         <button className="scroll-btn"  id="Display-btn">
                          <IoIosArrowUp  className="scroll-icon"/>
                          </button>
                     </div>

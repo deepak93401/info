@@ -10,6 +10,8 @@ import Portfolio from "./Portfolio.js";
 import Blog from "./Blog.js";
 import { Link, Route,Routes } from "react-router-dom";
 import Contact from "./Contact";
+import Resiter from "./Resiter.js";
+import Login from "./Login.js";
 
 
 
@@ -24,12 +26,15 @@ function Main(){
          <Routes>
             
             <Route path="/" element={<Home></Home>}></Route>
+           
             <Route path="/About"  element={<About></About>}></Route>
             <Route path="/service"  element={<Service></Service>}></Route>
             <Route path="/portfolio" element={<Portfolio></Portfolio>}></Route>
             <Route path="/Blog" element={<Blog></Blog>}></Route>
             <Route path="/Contact" element={<Contact></Contact>}></Route>
-
+            <Route path="/Resiter"  element={<Resiter></Resiter>}></Route>
+            <Route path="/Login"  element={<Login></Login>}></Route>
+         
 
             
          </Routes>

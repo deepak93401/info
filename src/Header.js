@@ -31,25 +31,30 @@ function Header(){
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav"  className="navbar-dark"/>
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="m-auto">
             <Nav.Link to="/"  as={Link} id="nav_link1" >Home</Nav.Link>
             <Nav.Link to="/About" as={Link}  id="nav_link2">About</Nav.Link>
             <Nav.Link to="/Service" as={Link}   id="nav_link3">Service</Nav.Link>
             <Nav.Link to="/Portfolio" as={Link}  id="nav_link4" >Portfolio</Nav.Link>
             <Nav.Link to="/Blog"  as={Link}  id="nav_link5">Blog</Nav.Link>
             <Nav.Link to="/Contact" as={Link}  id="nav_link6">Contact</Nav.Link>
-            
-          </Nav>
-        
-          <div className="icon-header">
+            <div className="icon-header">
           <RiFacebookFill className="i-head" />
           <FaLinkedinIn  className="i-head"  />
           <FaInstagram  className="i-head" />
           <FaTwitter   className="i-head" />
 
           </div>
-
-          <button className="nav-btn" >BUY NOW</button>
+           
+        
+          <Nav.Link to="/Login" as={Link}  id="nav_link6">  <button className="nav-btn" >Login</button></Nav.Link>
+            <Nav.Link to="/Resiter" as={Link}  id="nav_link6"><button className="nav-btn">Resister</button></Nav.Link>
+          
+          
+          </Nav>
+          
+          
+      
       
         </Navbar.Collapse>
       </Container>
