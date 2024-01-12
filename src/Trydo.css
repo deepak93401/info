@@ -30,6 +30,9 @@ header {
     top: 5px;
 
 }
+.navmain{
+    background-color: #101010;
+}
 
 
 /* navbar css */
@@ -211,7 +214,7 @@ header {
     color: white;
     text-decoration: none;
     position: relative;
-    /* margin-left: 30px; */
+    margin-left: 30px;
 }
 #nav_link6:hover {
     color:#ef0963;
@@ -275,7 +278,7 @@ header {
 
 .icon-header {
     padding: 5px 0px;
-    margin: 0px 0px 0px 200px;
+    /* margin: 0px 0px 0px 200px; */
 }
 
 .i-head {
@@ -300,7 +303,7 @@ header {
 /* Home css */
 #Home {
     width: 100%;
-    height: 950px;
+    height: 100vh;
     background-image: url(imaige/banner.jpg);
     background-size:100% 100%;
     background-repeat: no-repeat;
@@ -747,6 +750,7 @@ margin-top: 50px;
 
 .Blog-sec:hover .Blog-img img{
     transform: scale(1.1);
+
 }
 
 .Blog-img {
@@ -798,7 +802,7 @@ margin-top: 50px;
 
     /* border: 2px solid red; */
     position: absolute;
-    bottom: -27%;
+    /* bottom: -27%; */
  
     transition: all 1s 0.3s ease;
 
@@ -1043,12 +1047,12 @@ footer {
 #Login{
    background-color: #101010;
    padding: 50px 50px;
-   height: 930px;
+   height: 1030px;
 }
 .login-sec{
-   width: 30%;
-   margin:200px auto;
-   background-color: white;
+   width: 100%;
+   margin-top:150px;
+   background-color:#101010;
    padding: 20px 30px;
    
 }
@@ -1061,12 +1065,12 @@ footer {
 #Resiter{
     background-color: #101010;
     padding: 50px 50px;
-    height: 930px;
+    height: 1030px;
  }
  .Resiter-sec{
-    width: 30%;
+    width: 100%;
     margin:80px auto;
-    background-color: white;
+    background-color:#101010;
     padding: 20px 30px;
     
  }
@@ -1076,4 +1080,36 @@ footer {
      bottom: 40px;
      left: 500px;
  }
- 
+ .loginlogo{
+     color:white;
+     font-size: 50px;
+     margin-top: 10px;
+ }
+ .fw-normal{
+    background-color: #101010;
+    color: #fff;
+ }
+ .form-label{
+    color:#fff;
+
+ }
+ #formemail,#formpassword{
+    background-color: #101010;
+    color:#fff;
+    
+ }
+ .fpassword{
+    color: #fff;
+ }
+ .Rlink{
+    color: #fff;
+ }
+ .login-img{
+    margin-top: 100px;
+    width: 100%;
+    height: 600px;
+ }
+ .login-img img{
+    width: 100%;
+    height: 100%;
+ }

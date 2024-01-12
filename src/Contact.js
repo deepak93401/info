@@ -165,8 +165,11 @@ function Contact(){
             
             
         }
-        console.log("products",products)
+        useEffect(()=>{
+            console.log("products",products)
 
+        },[])
+        
         //  this not use in component
 
         //  localStorage.setItem("products",JSON.stringify(products))

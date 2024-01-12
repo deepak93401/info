@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
+import Contactimg from "./imaige/banner.jpg"
 
 
 function Resiter() {
-            const [loacaldata,setLocaldata]=useState([])
+          
 
         function Res(e) {
                          
@@ -98,6 +99,7 @@ function Resiter() {
 
       else if(product.usercpassword!==product.userpassword){
         document.getElementById("cpwerror").innerHTML="passwordnot match"
+        result=false 
       }
 
       else{
@@ -105,7 +107,11 @@ function Resiter() {
     }
     if(result){
       result=false;
-      savelocal(product)
+
+      let storedFromData=JSON.parse(localStorage.getItem('product'))||[];
+      localStorage.setItem('product',JSON.stringify([...storedFromData,product]))
+     
+      // savelocal(product)
       // let productsdata=[...login,product]
       // setLogin(productsdata)
       // console.log(productsdata)
@@ -114,79 +120,106 @@ function Resiter() {
 }
 
 
-function savelocal(product){
-       let storedFromData=JSON.parse(localStorage.getItem('product'))||[];
-       localStorage.setItem('product',JSON.stringify([...storedFromData,product]))
+// function savelocal(product){
       
-       storedFromData=JSON.parse(localStorage.getItem('product'))||[];
-       setLocaldata(storedFromData)
-  }
+//       //  storedFromData=JSON.parse(localStorage.getItem('product'))||[];
+//       //  setLocaldata(storedFromData)
+//   }
 
 
 
   return (
     <>
+  
       <section id='Resiter'>
-        <div className='Resiter-sec'>
 
-          <form onSubmit={Res}>
+        <div className='container'>
+          <div className='row'>
+             <div className='col-md-6'>
+             <div className='Resiter-sec'>
 
-            <h3 className="fw-normal mb-3 pb-3" >sign up</h3>
+                      <form onSubmit={Res}>
 
-            <div className="form-outline mb-4">
-              <label className="form-label">first name</label>
-              <input type="text" className="form-control form-control-lg" name='userfname' />
-              <p id="userferror" className="error"></p>
+                        <h3 className="fw-normal mb-3 pb-3" >sign up</h3>
 
-            </div>
+                        <div className="form-outline mb-4">
+                          <label className="form-label">first name</label>
+                          <input type="text" className="form-control"  id=""  name='userfname' />
+                          <p id="userferror" className="error"></p>
 
-            <div className="form-outline mb-4">
-              <label className="form-label" >last name</label>
-              <input type="text" className="form-control form-control-lg" name='userlname' />
-              <p id="userlerror" className="error"></p>
+                        </div>
 
-            </div>
+                        <div className="form-outline mb-4">
+                          <label className="form-label" >last name</label>
+                          <input type="text" className="form-control" id="" name='userlname' />
+                          <p id="userlerror" className="error"></p>
 
-
-            <div className="form-outline mb-4">
-              <label className="form-label">Email address</label>
-              <input type="email" className="form-control form-control-lg" name='useremail' />
-              <p id="emerror" className="error"></p>
-
-            </div>
-
-            <div className="form-outline mb-4">
-              <label className="form-label" >Password</label>
-              <input type="password" className="form-control form-control-lg" name='userpassword' />
-              <p id="pwerror" className="error"></p>
-            </div>
+                        </div>
 
 
-            <div className="form-outline mb-4">
-              <label className="form-label" > conform Password</label>
-              <input type="password" className="form-control form-control-lg" name='usercpassword' />
-              <p id="cpwerror" className="error"></p>
+                        <div className="form-outline mb-4">
+                          <label className="form-label">Email address</label>
+                          <input type="email" className="form-control" id="" name='useremail' />
+                          <p id="emerror" className="error"></p>
 
-            </div>
+                        </div>
 
-            <div className="pt-1 mb-4">
-            <button className="btn btn-info btn-lg " >Register </button>
-            </div>
-          
+                        <div className="form-outline mb-4">
+                          <label className="form-label" >Password</label>
+                          <input type="password" className="form-control" id="" name='userpassword' />
+                          <p id="pwerror" className="error"></p>
+                        </div>
 
-            <p className="small mb-5 pb-lg-2"><a className="text-muted" href="">Forgot password?</a></p>
-            <p>Don't have an account? <Link to="/login" >Login</Link></p>
 
+                        <div className="form-outline mb-4">
+                          <label className="form-label" > conform Password</label>
+                          <input type="password" className="form-control" id="" name='usercpassword' />
+                          <p id="cpwerror" className="error"></p>
+
+                        </div>
+
+                        <div className="pt-1 mb-4">
+                        <button type="submit" className="Contact-btn">Register</button>
+                        </div>
+
+
+                        <p className="small mb-5 pb-lg-2"><a className="fpassword" href="">Forgot password?</a></p>
+                        <p>Don't have an account? <Link to="/login" className="Rlink" >Login</Link></p>
+
+
+
+
+                      </form>
+
+
+
+
+
+</div>
+             </div>
            
-         
-
-          </form>
-
-       
-
-
-
+           
+           
+           
+           
+             <div className='col-md-6'>
+                      <div className="login-img">
+                                     <img src={Contactimg}></img>
+                       </div>
+             </div>
+          </div>
         </div>
+
+        
+        
+          
+        
+          
+        
+      
+      
+      
+      
       </section>
 
     </>

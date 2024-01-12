@@ -1,17 +1,22 @@
 import React, { useState } from 'react'
 import Form from 'react-bootstrap/Form';
 import { FaEyeSlash } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import Contactimg from "./imaige/banner.jpg"
 
 function Login() {
+                              //  const [loacaldata,setLocaldata]=useState([])
 
-
-                               const [login,setLogin]=useState([])
+                              //  const [login,setLogin]=useState([])
+                              const history=useNavigate()
                                     function Loginvalidation(e){
                                       
+
+                                     
                                       e.preventDefault()
+                                  
                                       const [useremail,userpassword]=e.target;
-                                
+                                      
 
                                     
                                       let product={
@@ -21,7 +26,7 @@ function Login() {
                                         
 
                                       }
-                                      console.log(product)
+                                      // console.log(product)
                                       e.target.reset()
 
                                       let result=true;
@@ -50,17 +55,43 @@ function Login() {
                                     }
                                     if(result){
                                       result=false;
-                                       let productsdata=[...login,product]
-                                       setLogin(productsdata)
-                                       console.log(productsdata)
+                                      //  let productsdata=[...login,product]
+                                      //  setLogin(productsdata)
+                                      //  console.log(productsdata)
+                                      localStorage.setItem('token',true)
+                                      let storedFromData=JSON.parse(localStorage.getItem('product'));
+                                      // console.log(storedFromData)
+                                      const userlogin=storedFromData.filter((el,k)=>{
+                                        return el.useremail===product.useremail && el.userpassword===product.userpassword
+                                    //   if(storedFromData && storedFromData.length){
+                                      // }             
+                                     })
+                                     console.log(userlogin)
+                                         if(userlogin.length===0){
+                                          alert("invalid detial")
+                                         }
+                                         else{
+                                          alert("user login sucessfully")
+                                          history("/")
+                                         }
+                                        // console.log(userlogin)
+                                      // }
+
+                                    
                                     }
+                                    
+                                   
 
                                     }
    
   return (
     <>
     <section id='Login'>
-    <div className='login-sec'>
+
+    <div className='container'>
+      <div className='row'>
+        <div className='col-md-6'>
+        <div className='login-sec'>
     
     <form onSubmit={Loginvalidation} >
 
@@ -68,30 +99,31 @@ function Login() {
 
                     <div className="form-outline mb-4">
                     <label className="form-label" >Email address</label>
-                    <input type="text"  className="form-control form-control-lg" name='useremail'/>
+                    <input type="text" className="form-control" id="formemail"  name='useremail'/>
                    
                     <p id="emerror" className="error"></p>
                     </div>
 
                     <div className="form-outline mb-4">
                     <label className="form-label" >Password</label>
-                    <input type="password"  className="form-control form-control-lg" name='userpassword'/>
+                    <input type="password"  className="form-control" id="formpassword" name='userpassword'/>
                     
                     <p id="pwerror" className="error"></p>
                      
                     </div>
 
                     <div className="pt-1 mb-4">
-                    <button className="btn btn-info btn-lg btn-block" type="submit" >Login</button>
+                    <button type="submit" className="Contact-btn">login</button>
                     </div>
 
-                    <p className="small mb-5 pb-lg-2"><a className="text-muted" href="#!">Forgot password?</a></p>
-                    <p>Don't have an account?  <Link to="/Resiter" >Resister</Link></p>
+                    <p className="small mb-5 pb-lg-2"><a className="fpassword"  href="#!">Forgot password?</a></p>
+                    <p>Don't have an account?  <Link to="/Resiter"  className='Rlink'>Resister</Link></p>
 
-</form>
-                                       
-                                       
-                                      
+        </form>
+                                              
+        </div>
+                </div>                               
+                                              
                                        
                                       
 
@@ -100,7 +132,16 @@ function Login() {
   
 
    
+    
+
+        <div className='col-md-6'>
+                     <div className="login-img">
+                                     <img src={Contactimg}></img>
+                       </div>
+        </div>
+      </div>
     </div>
+   
     </section>
    
      
