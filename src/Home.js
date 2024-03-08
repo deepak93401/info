@@ -98,12 +98,12 @@ function Home(){
             </div>
 
         </section>
-         {/* <About></About>
+         <About></About>
         <Service></Service>
         <Portfolio></Portfolio> 
         <Blog></Blog>
         <Contact></Contact>
-        <Footer></Footer> */}
+        <Footer></Footer>
         
         </>
     )

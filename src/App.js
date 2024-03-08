@@ -6,8 +6,10 @@ import Login from './Login';
 import Resiter from './Resiter';
 import { Component } from 'react';
 import Protected from './Protected';
-import Home from './Home';
+
 import Header from './Header';
+
+import Footer from "./Footer";
 import Mainhome from './Mainhome';
 
 
@@ -22,7 +24,24 @@ function App() {
        <Route path="/mainhome" element={<Mainhome/>}/>
        <Route path="/login" element={<Login/>}/>
        <Route path="/resiter" element={<Resiter/>}/>
-       </Routes>
+       {/* <Route path="/" element={
+        <>
+             <Home/>
+           <About/>
+           <Service/>
+           <Portfolio/>
+           <Blog/>
+           <Contact/>
+          
+        
+        </>
+       }/> */}
+                
+          
+        </Routes>
+          
+        <Footer/>
+
        </>
   )
 }
