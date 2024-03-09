@@ -155,11 +155,20 @@
     .Blog-sec{
         padding: 50px;
     }
-    .Blog-con{
-        bottom: -30%;
+    .Blog-con {
+      
+    
+    
+        /* border: 2px solid red; */
+        position: absolute;
+        top:65%;
+     
+        
+    
     }
+    
     .Blog-img:hover .Blog-con {
-        bottom: -30%;
+        top:50%;
      
     }
     .Blog-img::after{

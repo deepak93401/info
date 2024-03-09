@@ -169,3 +169,40 @@
     font-weight: 600;
     border: 2px solid #f9004d;
 }
+
+@media  screen and (max-width: 570px)
+{
+    .Service-con {
+        color: #fff;
+        background-image: linear-gradient(90deg, #f61b10, #ef0963);
+        cursor: pointer;
+    
+    
+    
+    }
+    .icon{
+        color: #fff;
+    }
+    .Blog-sec{
+        padding: 50px;
+    }
+    .Blog-con {
+      
+    
+    
+        /* border: 2px solid red; */
+        position: absolute;
+        top:65%;
+     
+        
+    
+    }
+    
+    .Blog-img:hover .Blog-con {
+        top:50%;
+     
+    }
+    /* .Blog-img::after{
+        opacity: 0.85;
+    } */
+}
