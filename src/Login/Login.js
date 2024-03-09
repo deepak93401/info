@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import Form from 'react-bootstrap/Form';
 import { FaEyeSlash } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
-import Contactimg from "./imaige/banner.jpg"
+import Contactimg from "../imaige/banner.jpg"
+import "./Login.css"
 
 function Login() {
                               //  const [loacaldata,setLocaldata]=useState([])
@@ -60,7 +61,7 @@ function Login() {
                                       //  console.log(productsdata)
                                       localStorage.setItem('token',true)
                                       let storedFromData=JSON.parse(localStorage.getItem('product'));
-                                      // console.log(storedFromData)
+                                      console.log("storedata",storedFromData)
                                       const userlogin=storedFromData.filter((el,k)=>{
                                         return el.useremail===product.useremail && el.userpassword===product.userpassword
                                     //   if(storedFromData && storedFromData.length){

@@ -1,9 +1,9 @@
 import React from "react";
-import Port1 from "./imaige/portfolio1.jpg"
-import Port2 from "./imaige/portfolio2.jpg"
-import Port3 from "./imaige/portfolio3.jpg"
-import Port4 from "./imaige/portfolio4.jpg"
-
+import Port1 from "../imaige/portfolio1.jpg"
+import Port2 from "../imaige/portfolio2.jpg"
+import Port3 from "../imaige/portfolio3.jpg"
+import Port4 from "../imaige/portfolio4.jpg"
+import "./Portfolio.css"
 
 function Portfolio(){
     return(

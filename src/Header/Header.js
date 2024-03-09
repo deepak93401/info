@@ -5,12 +5,13 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6"
 import { FaTwitter } from "react-icons/fa";
 
-import Logo1 from './imaige/logo.png'
+import Logo1 from '../imaige/logo.png'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link, useNavigate } from "react-router-dom";
 import { IoIosLogOut } from "react-icons/io";
+import "./Header.css"
 
 
 
@@ -68,7 +69,7 @@ function Header() {
                 {/* <Nav.Link to="/Resiter" as={Link}><button className="nav-btn">Register</button></Nav.Link> */}
                
                 {localStorage.getItem('token')?
-                <IoIosLogOut  className="loginlogo" onClick={logout} /> 
+                <button  className="loginlogo" onClick={logout} > Logout</button>
                  : <Nav.Link to="/Login" as={Link} >  <button className="nav-btn" >Login</button></Nav.Link>
 
               }

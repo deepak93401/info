@@ -2,15 +2,15 @@
 import './App.css';
 import { Route,Routes } from 'react-router-dom';
 import Main from './Main';
-import Login from './Login';
-import Resiter from './Resiter';
+import Login from './Login/Login';
+import Resiter from './Resister/Resiter';
 import { Component } from 'react';
 import Protected from './Protected';
 
-import Header from './Header';
+import Header from './Header/Header';
 
-import Footer from "./Footer";
-import Mainhome from './Mainhome';
+import Footer from "./Footer/Footer";
+import Mainhome from './Mainhome/Mainhome';
 
 
 
@@ -21,9 +21,9 @@ function App() {
  <Header/>
     <Routes> 
        <Route path="*" element={<Protected Component={Main}/>}/>
-       <Route path="/mainhome" element={<Mainhome/>}/>
-       <Route path="/login" element={<Login/>}/>
-       <Route path="/resiter" element={<Resiter/>}/>
+       <Route path="/mainhome" element={<Mainhome/>}/> 
+        <Route path="/login" element={<Login/>}/> 
+        <Route path="/resiter" element={<Resiter/>}/> 
        {/* <Route path="/" element={
         <>
              <Home/>

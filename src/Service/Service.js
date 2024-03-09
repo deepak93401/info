@@ -2,7 +2,7 @@ import React  from "react";
 import { IoIosBusiness } from "react-icons/io";
 import { CgWebsite } from "react-icons/cg"; 
 import { PiUsers } from "react-icons/pi";
-
+import "./Service.css"
 
 
 

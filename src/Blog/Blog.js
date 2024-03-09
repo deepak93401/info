@@ -1,8 +1,8 @@
 import React from "react";
-import Blog1 from "./imaige/blog1.jpg";
-import Blog2 from "./imaige/blog2.jpg";
-import Blog3 from "./imaige/blog3.jpg";
-
+import Blog1 from "../imaige/blog1.jpg";
+import Blog2 from "../imaige/blog2.jpg";
+import Blog3 from "../imaige/blog3.jpg";
+import "./Blog.css"
 
 function Blog(){
     return(

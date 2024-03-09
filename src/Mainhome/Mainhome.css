@@ -1,0 +1,66 @@
+#Home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imaige/banner.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+
+.Home_sec {
+    width: 100%;
+    padding-top: 250px;
+
+}
+
+.Home-pera {
+    color: rgba(198, 201, 216, .75);
+    font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+
+  margin-bottom: 20px;
+}
+
+.Home-head {
+    color: #fff;
+    font-size: 75px;
+  font-weight: 900;
+  font-family: Montserrat,sans-serif;
+  /* line-height: 90px; */
+  text-transform: inherit;
+  /* width: 70%; */
+}
+
+.Home-span {
+    color: #f9004d;
+    font-size: 75px;
+    font-weight: 900;
+    font-family: Montserrat,sans-serif;
+    /* line-height: 90px; */
+    text-transform: inherit;
+    width: 70%;
+}
+
+.Home-head2 {
+    color:#fff;
+    margin-top: 20px;
+    font-size: 54px;
+    font-weight: 700;
+}
+
+.scroll-btn {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    border: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+
+}
+
+.scroll-icon {
+    color: #fff;
+    font-weight: 600;
+}

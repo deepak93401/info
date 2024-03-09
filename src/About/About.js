@@ -1,8 +1,9 @@
 import React from "react";
-import Aboutimg from "./imaige/About.jpg"
+import Aboutimg from "../imaige/About.jpg"
 import { useState } from 'react';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import "./About.css"
 
 function About() {
 

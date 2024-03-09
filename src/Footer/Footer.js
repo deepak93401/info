@@ -1,9 +1,10 @@
 import React from "react";
-import Logo2 from "./imaige/logo.png"
+import Logo2 from "../imaige/logo.png"
 import { RiFacebookFill } from "react-icons/ri";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6"
 import { FaTwitter } from "react-icons/fa";
+import "./Footer.css"
 
 function Footer(){
     return(

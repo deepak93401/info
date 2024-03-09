@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
-import Contactimg from "./imaige/banner.jpg"
-
+import Contactimg from "../imaige/banner.jpg"
+import "./Resistor.css"
 
 function Resiter() {
           

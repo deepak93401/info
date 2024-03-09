@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import Header from "./Header";
-import About from "./About";
-import Service from "./Service";
-import Portfolio from "./Portfolio";
-import Blog from "./Blog";
-import Contact from "./Contact";
-import Footer from "./Footer";
+import Header from "../Header/Header";
+import About from "../About/About";
+import Service from "../Service/Service";
+import Portfolio from "../Portfolio/Portfolio";
+import Blog from "../Blog/Blog";
+import Contact from "../Contact/Contact";
+import Footer from "../Footer/Footer";
 import { IoIosArrowUp } from "react-icons/io";
-
+import "./Home.css"
 
 function Home(){    
 
@@ -24,7 +24,7 @@ function Home(){
             }
         })
             
-    },[])
+    },[btn])
 
      const scrollup=()=>{
         window.scrollTo({
@@ -103,7 +103,7 @@ function Home(){
         <Portfolio></Portfolio> 
         <Blog></Blog>
         <Contact></Contact>
-        <Footer></Footer>
+    
         
         </>
     )

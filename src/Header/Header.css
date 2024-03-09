@@ -1,0 +1,294 @@
+header {
+    width: 100%;
+
+    background-color: transparent;
+    position: absolute;
+    top: 5px;
+
+}
+.navmain{
+    background-color: #101010;
+}
+
+
+/* navbar css */
+#navbar {
+    width: 100%;
+    
+
+
+
+}
+
+/* .nav-div1{
+    display: flex;
+    justify-content: flex-start;
+}
+.nav-div2{
+    display: flex;
+    justify-content: flex-end;
+} */
+
+#navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+    padding-top: 20px;
+}
+
+#nav_link1 {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    margin-left: 30px;
+}
+#nav_link1:hover {
+    color:#ef0963;
+  }
+
+#nav_link1::after{
+    content: "";
+    width: 80%;
+    height: 2px;
+    background-color: #f9004d;
+    position: absolute;
+    top: 50px;
+    left: 7px;
+    box-sizing: border-box;
+    display: none;
+
+
+}
+
+
+ #nav_link1:hover:after {
+    display: block;
+
+
+} 
+#nav_link2 {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    margin-left: 30px;
+}
+#nav_link2:hover {
+    color:#ef0963;
+  }
+
+#nav_link2::after{
+    content: "";
+    width: 80%;
+    height: 2px;
+    background-color: #f9004d;
+    position: absolute;
+    top: 50px;
+    left: 7px;
+    box-sizing: border-box;
+    display: none;
+
+
+}
+
+
+ #nav_link2:hover:after {
+    display: block;
+
+
+} 
+#nav_link3 {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    margin-left: 30px;
+}
+#nav_link3:hover {
+    color:#ef0963;
+  }
+
+#nav_link3::after{
+    content: "";
+    width: 80%;
+    height: 2px;
+    background-color: #f9004d;
+    position: absolute;
+    top: 50px;
+    left: 7px;
+    box-sizing: border-box;
+    display: none;
+
+
+}
+
+
+ #nav_link3:hover:after {
+    display: block;
+
+
+} 
+
+#nav_link4 {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    margin-left: 30px;
+}
+#nav_link4:hover {
+    color:#ef0963;
+  }
+
+#nav_link4::after{
+    content: "";
+    width: 80%;
+    height: 2px;
+    background-color: #f9004d;
+    position: absolute;
+    top: 50px;
+    left: 7px;
+    box-sizing: border-box;
+    display: none;
+
+
+}
+
+
+
+ #nav_link4:hover:after {
+    display: block;
+
+
+} 
+#nav_link5 {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    margin-left: 30px;
+}
+#nav_link5:hover {
+    color:#ef0963;
+  }
+
+#nav_link5::after{
+    content: "";
+    width: 80%;
+    height: 2px;
+    background-color: #f9004d;
+    position: absolute;
+    top: 50px;
+    left: 7px;
+    box-sizing: border-box;
+    display: none;
+
+
+}
+
+
+ #nav_link5:hover:after {
+    display: block;
+
+
+} 
+#nav_link6 {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    margin-left: 30px;
+}
+#nav_link6:hover {
+    color:#ef0963;
+  }
+
+#nav_link6::after{
+    content: "";
+    width: 80%;
+    height: 2px;
+    background-color: #f9004d;
+    position: absolute;
+    top: 50px;
+    left: 7px;
+    box-sizing: border-box;
+    display: none;
+
+
+}
+
+
+ #nav_link6:hover:after {
+    display: block;
+
+
+} 
+
+
+
+
+/* .nav_link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav_link:hover {
+    color: #f9004d;
+} */
+
+
+.nav-btn {
+    background-color: black;
+
+    border: 2px solid whitesmoke;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
+
+.nav-btn:hover {
+    background-color: #f9004d;
+    border: 2px solid #f9004d;
+    transform: translateY(-3px);
+}
+
+.navbar-toggler {
+    color: white;
+    background-color: white;
+}
+
+.icon-header {
+    padding: 5px 0px;
+    /* margin: 0px 0px 0px 200px; */
+}
+
+.i-head {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 15px 10px;
+
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+
+}
+
+.i-head:hover {
+    font-weight: 800;
+    transform: translateY(-3px);
+    font-weight: 800;
+
+}
+.loginlogo {
+    background-color: black;
+
+    border: 2px solid whitesmoke;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
+.loginlogo:hover{
+    background-color: #f9004d;
+    border: 2px solid #f9004d;
+    transform: translateY(-3px);
+}

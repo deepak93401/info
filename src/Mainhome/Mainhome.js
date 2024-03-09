@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Mainhome.css"
 
 function Mainhome() {
   return (

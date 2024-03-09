@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Form from 'react-bootstrap/Form';
-import Contactimg from "./imaige/banner.jpg"
+import Contactimg from "../imaige/banner.jpg"
 import Table from 'react-bootstrap/Table';
 import {useCookies} from 'react-cookie';
-
+import "./Contact.css"
 
 
 
