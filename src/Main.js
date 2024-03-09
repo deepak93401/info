@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header/Header.js";
-// import "./Trydo.css"
+import "./Trydo.css"
 import "./media.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./Home/Home.js";
